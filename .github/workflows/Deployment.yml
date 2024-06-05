@@ -7,7 +7,7 @@ jobs:
       - name: Grab Code
         uses: actions/checkout@v4
       - name: Install NodeJS
-        uses: actions/node-setup@v4
+        uses: actions/setup-node@v4
       - name: Install project dependencies
         run: npm ci
       - name: Lint Code
@@ -31,7 +31,7 @@ jobs:
       - name: Grab Code
         uses: actions/checkout@v4
       - name: Install NodeJS
-        uses: actions/node-setup@v4
+        uses: actions/setup-node@v4
       - name: Install project dependencies
         run: npm ci
       - name: Build Project
